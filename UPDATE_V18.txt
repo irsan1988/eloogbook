@@ -1,0 +1,14 @@
+UPDATE V18 - BARCODE MENJADI QR CODE
+
+1. Backup database dan file .env.php sebelum update.
+2. Overwrite seluruh file aplikasi dengan versi v18.
+3. Jangan hapus atau timpa .env.php.
+4. Buka aplikasi sekali agar migrasi schema v18 berjalan otomatis.
+5. Login sebagai Admin > Pengguna.
+6. Petugas lama akan berstatus QR Code "Belum dibuat". Klik "Buat QR Code" untuk menerbitkan QR baru.
+7. Barcode lama tidak dipakai lagi sebagai kredensial login pada versi v18.
+8. Petugas baru otomatis mendapatkan QR Code saat akun dibuat.
+9. QR dapat dicetak dan dipindai dengan kamera HP pada halaman login.
+10. Pemindaian kamera memerlukan HTTPS dan browser yang mendukung BarcodeDetector untuk format qr_code. QR scanner USB/Bluetooth tetap dapat digunakan melalui kolom Kode QR.
+
+Tidak ada perubahan pada penugasan Petugas, Daily Check Harian X-Ray, data logbook, atau hasil cetak logbook.

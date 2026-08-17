@@ -1,0 +1,29 @@
+AVSEC LOGBOOK v13 - UPDATE HOSTING
+
+PERUBAHAN:
+- Menu baru: DIALY CHECK HARIAN.
+- Daily Check X-Ray dipisahkan dari Daftar Logbook umum.
+- Urutan menu Daily Check:
+  1. Bagasi Single View
+  2. Cabin Single View
+  3. SSCP Single View
+  4. Cargo Single View
+  5. Bagasi Multi View
+  6. Cabin Multi View
+  7. SSCP Multi View
+  8. Cargo Multi View
+- Kode Bagasi Single View menjadi XRAY-SINGLE-BAGASI.
+- Kode Bagasi Multi View menjadi XRAY-MULTI-BAGASI.
+- Kode lama XRAY-SINGLE-EXACT / XRAY-SINGLE-ACT dan XRAY-MULTI-EXACT dimigrasikan otomatis bila ditemukan.
+
+UPDATE DARI v12:
+1. Backup database.
+2. Extract ZIP v13.
+3. Overwrite semua file aplikasi di hosting.
+4. JANGAN hapus atau timpa file .env.php yang sudah ada di hosting.
+5. Buka aplikasi sekali. Migrasi schema 13 berjalan otomatis.
+6. Tidak perlu import database ulang.
+
+INSTALASI BARU:
+- Upload/extract ke public_html atau subfolder.
+- Buka install.php dan ikuti instalasi database.

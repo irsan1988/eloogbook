@@ -1,0 +1,29 @@
+AVSEC LOGBOOK v14 - UPDATE HOSTING
+
+PERUBAHAN:
+- Menambahkan menu Admin: Master Data X-Ray.
+- Empat data header Daily Check X-Ray disimpan pada tabel database tersendiri:
+  1. Nama Operator Penerbangan
+  2. Lokasi Penempatan/Gedung
+  3. Merk/Tipe/Nomor Seri
+  4. Nomor dan Tanggal Sertifikat
+- Keempat field tersebut menjadi dropdown yang diisi langsung pada posisi header di template Daily Check X-Ray.
+- Tanggal tampil pada template dan Waktu Pengujian tetap memakai input jam.
+- Berlaku untuk Bagasi, Cabin, SSCP, Cargo, Single View dan Multi View.
+- Admin dapat tambah, edit, aktif/nonaktif, dan hapus pilihan dropdown.
+- Nilai logbook lama tetap tersimpan walaupun master data diubah/dihapus.
+- Saat update, nilai header X-Ray lama otomatis diimpor ke master data agar tetap tersedia.
+
+UPDATE DARI v13:
+1. Backup database.
+2. Extract ZIP v14.
+3. Overwrite semua file aplikasi di hosting.
+4. JANGAN hapus atau timpa file .env.php yang sudah ada di hosting.
+5. Buka aplikasi sekali. Migrasi schema 14 berjalan otomatis.
+6. Login Admin dan buka menu Master Data X-Ray untuk melengkapi pilihan dropdown.
+7. Tidak perlu import database ulang.
+
+INSTALASI BARU:
+- Upload/extract ke public_html atau subfolder.
+- Buka install.php dan ikuti instalasi database.
+- Setelah login Admin, kelola pilihan pada menu Master Data X-Ray.

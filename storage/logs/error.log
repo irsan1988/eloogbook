@@ -1,0 +1,24 @@
+[2026-08-15T19:38:38+07:00] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10-jumlah_senpi' for key 'uq_field_key'
+#0 C:\xampp_lite_8_3\www\e-logbook\app\models\LogbookModel.php(44): PDOStatement->execute(Array)
+#1 C:\xampp_lite_8_3\www\e-logbook\app\controllers\LogbookController.php(64): LogbookModel->addField(10, Array)
+#2 C:\xampp_lite_8_3\www\e-logbook\core\Router.php(72): LogbookController->storeField('10')
+#3 C:\xampp_lite_8_3\www\e-logbook\index.php(14): Router->dispatch()
+#4 {main}
+[2026-08-15T19:38:46+07:00] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10-jumlah_senpi' for key 'uq_field_key'
+#0 C:\xampp_lite_8_3\www\e-logbook\app\models\LogbookModel.php(44): PDOStatement->execute(Array)
+#1 C:\xampp_lite_8_3\www\e-logbook\app\controllers\LogbookController.php(64): LogbookModel->addField(10, Array)
+#2 C:\xampp_lite_8_3\www\e-logbook\core\Router.php(72): LogbookController->storeField('10')
+#3 C:\xampp_lite_8_3\www\e-logbook\index.php(14): Router->dispatch()
+#4 {main}
+[2026-08-15T19:39:08+07:00] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10-jumlah_senpi' for key 'uq_field_key'
+#0 C:\xampp_lite_8_3\www\e-logbook\app\models\LogbookModel.php(44): PDOStatement->execute(Array)
+#1 C:\xampp_lite_8_3\www\e-logbook\app\controllers\LogbookController.php(64): LogbookModel->addField(10, Array)
+#2 C:\xampp_lite_8_3\www\e-logbook\core\Router.php(72): LogbookController->storeField('10')
+#3 C:\xampp_lite_8_3\www\e-logbook\index.php(14): Router->dispatch()
+#4 {main}
+[2026-08-15T19:39:52+07:00] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10-jumlah_senpi' for key 'uq_field_key'
+#0 C:\xampp_lite_8_3\www\e-logbook\app\models\LogbookModel.php(44): PDOStatement->execute(Array)
+#1 C:\xampp_lite_8_3\www\e-logbook\app\controllers\LogbookController.php(64): LogbookModel->addField(10, Array)
+#2 C:\xampp_lite_8_3\www\e-logbook\core\Router.php(72): LogbookController->storeField('10')
+#3 C:\xampp_lite_8_3\www\e-logbook\index.php(14): Router->dispatch()
+#4 {main}

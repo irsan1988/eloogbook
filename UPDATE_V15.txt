@@ -1,0 +1,19 @@
+AVSEC LOGBOOK v15
+
+PERUBAHAN
+1. Khusus seluruh DIALY CHECK HARIAN X-RAY, satu jenis X-Ray hanya dapat diisi satu kali pada tanggal yang sama.
+2. Setelah Daily Check tersimpan, sistem tidak menampilkan form penambahan baris berikutnya. Koreksi dilakukan melalui tombol Edit.
+3. Daily Check X-Ray tidak menggunakan Dinas/Regu/Shift sebagai pembeda sesi. Kunci harian adalah Jenis Daily Check X-Ray + Tanggal.
+4. Admin dapat mengaktifkan atau menonaktifkan masing-masing 8 Daily Check X-Ray dari menu DIALY CHECK HARIAN.
+5. Daily Check yang nonaktif tidak dapat menerima pengisian baru dan tidak dihitung pada notifikasi logbook aktif yang belum diisi. Riwayat dan hasil cetak tetap tersimpan.
+6. Template, posisi checkbox, hasil cetak, Master Data X-Ray, tanda tangan, role Admin/Supervisor/Petugas, dan fitur sebelumnya tetap dipertahankan.
+
+UPDATE DARI v14.1
+- Backup database.
+- Overwrite seluruh file aplikasi dengan v15.
+- JANGAN hapus atau timpa .env.php milik hosting.
+- Buka aplikasi sekali. Migrasi schema 15 akan menambah pengaman database untuk satu Daily Check per hari.
+- Tidak perlu import database ulang.
+
+CATATAN DATA LAMA
+Jika pada versi lama terdapat lebih dari satu lembar X-Ray pada tanggal yang sama, data lama tidak dihapus otomatis. Sistem hanya menghentikan penambahan lembar baru. Admin dapat meninjau dan menghapus duplikat lama bila memang tidak diperlukan.

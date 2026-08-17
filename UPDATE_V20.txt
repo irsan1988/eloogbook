@@ -1,0 +1,19 @@
+UPDATE V20 - DAILY CHECK X-RAY SATU TEMPLATE PENUH
+
+Perubahan:
+1. Pengisian Daily Check Harian X-Ray sekarang dilakukan dalam satu lembar template yang sama.
+2. Dropdown Nama Operator Penerbangan, Lokasi, Merk/Tipe/Nomor Seri, Nomor/Tanggal Sertifikat tetap tampil langsung di header template.
+3. Checkbox pengujian tampil dan diisi langsung pada kotak kecil template yang sama.
+4. Catatan, Personel Pengamanan Penerbangan 1 dan 2 diisi langsung pada garis template.
+5. Tanda tangan Personel 1 dilakukan langsung pada area tanda tangan di template.
+6. Saat membuat Daily Check baru, satu kali klik Simpan langsung membuat sesi dan satu lembar hasil. Tidak ada tahap tambah baris kedua.
+7. Saat Edit, dropdown header dan seluruh isi checklist dapat dikoreksi dari lembar template yang sama.
+8. Daily Check tetap hanya satu kali per jenis per tanggal.
+9. Tidak ada perubahan struktur database pada v20.
+
+CARA UPDATE DARI V19:
+- Backup database dan file hosting.
+- Overwrite semua file aplikasi dengan paket v20.
+- Jangan hapus atau timpa .env.php.
+- Tidak perlu import database ulang.
+- Bersihkan cache browser bila tampilan lama masih muncul.

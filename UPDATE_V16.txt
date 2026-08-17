@@ -1,0 +1,12 @@
+UPDATE V16
+
+1. Backup database.
+2. Overwrite semua file aplikasi dengan versi v16.
+3. JANGAN hapus atau timpa .env.php.
+4. Buka aplikasi sekali. Migrasi schema 16 berjalan otomatis.
+5. Login Admin > Penugasan Petugas.
+6. Atur Petugas untuk setiap logbook. Logbook umum dapat memiliki beberapa Petugas. Daily Check X-Ray hanya 1 Petugas per jenis.
+7. Admin > Pengguna > Buat/Reset Barcode untuk mencetak barcode login Petugas.
+8. Login barcode via kamera memerlukan HTTPS dan browser dengan BarcodeDetector. Barcode scanner USB/Bluetooth dapat langsung digunakan pada kolom barcode.
+
+Catatan: saat upgrade, petugas aktif lama otomatis tetap ditugaskan ke semua logbook umum untuk mencegah kehilangan akses mendadak. Daily Check lama otomatis memilih petugas terakhir yang pernah mengisi, jika ada.

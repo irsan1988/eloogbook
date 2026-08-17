@@ -1,0 +1,13 @@
+HOTFIX V14.1
+
+Perbaikan:
+- Memperbaiki error: Call to undefined function xray_single_codes().
+- Penyebab: install.php memuat core/migrations.php sebelum core/helpers.php pada instalasi baru.
+- install.php sekarang memuat helpers.php lebih dahulu.
+- migrations.php juga melakukan fallback require helpers.php agar aman bila dipanggil standalone.
+
+UPDATE HOSTING:
+1. Backup database.
+2. Overwrite semua file dengan paket ini.
+3. Jangan hapus .env.php bila aplikasi sudah terpasang.
+4. Jika instalasi baru belum selesai, buka install.php kembali.

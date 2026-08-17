@@ -1,0 +1,18 @@
+UPDATE v19 - PERBAIKAN SCAN QR CODE KAMERA
+==========================================
+
+Masalah yang diperbaiki:
+- Pesan "Browser ini belum mendukung scan QR Code dari kamera" pada browser yang tidak menyediakan BarcodeDetector.
+
+Perubahan:
+1. Sistem tetap menggunakan BarcodeDetector jika browser mendukung QR Code.
+2. Jika BarcodeDetector tidak tersedia, sistem otomatis menggunakan jsQR sebagai pemindai cadangan.
+3. Akses kamera memakai getUserMedia sehingga dapat berjalan di lebih banyak browser Android/iOS modern.
+4. Pesan error dibuat spesifik untuk HTTPS, izin kamera, kamera tidak ditemukan, atau kamera sedang dipakai aplikasi lain.
+5. QR scanner USB/Bluetooth tetap dapat dipakai melalui kolom Kode QR.
+
+CATATAN HOSTING:
+- Wajib menggunakan HTTPS untuk scan kamera.
+- Fallback jsQR dimuat dari jsDelivr. Browser pengguna perlu dapat mengakses CDN saat halaman login dibuka.
+- Tidak ada perubahan database pada v19.
+- Untuk update: backup aplikasi/database, overwrite file v18 dengan v19, dan jangan hapus .env.php.
